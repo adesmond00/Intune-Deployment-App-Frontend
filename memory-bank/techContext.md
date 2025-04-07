@@ -29,4 +29,4 @@
 - Leverage TypeScript for type safety and improved developer experience.
 - Follow accessibility guidelines when implementing components using Headless UI and Radix UI.
 - Set up ESLint and Prettier for code linting and formatting consistency (to be done after initial setup).
-- **Known Issue (2025-04-07):** `npm run` scripts (e.g., `npm run dev`) fail to resolve executables in `node_modules/.bin` (like `vite` and `tailwindcss`). Workaround is to run them directly using `npx` (e.g., `npx vite`, `npx tailwindcss init -p`). This might be an environment-specific path issue.
+- **Update (2025-04-07):** Modified `package.json` `dev` script from `"vite"` to `"npx vite"` to improve cross-environment compatibility for running the development server via `npm run dev`. This addresses issues where `npm run` couldn't find the `vite` executable directly.
